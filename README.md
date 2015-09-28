@@ -1,49 +1,60 @@
-# remarkable-defaults [![NPM version](https://badge.fury.io/js/remarkable-defaults.svg)](http://badge.fury.io/js/remarkable-defaults)  [![Build Status](https://travis-ci.org/doowb/remarkable-defaults.svg)](https://travis-ci.org/doowb/remarkable-defaults) 
+# remarkable-defaults [![NPM version](https://badge.fury.io/js/remarkable-defaults.svg)](http://badge.fury.io/js/remarkable-defaults)  [![Build Status](https://travis-ci.org/doowb/remarkable-defaults.svg)](https://travis-ci.org/doowb/remarkable-defaults)
 
 > Smart default options for the remarkable markdown parser.
 
-## Install with [npm](npmjs.org)
+Install with [npm](https://www.npmjs.com/)
 
-```bash
-npm i remarkable-defaults --save
+```sh
+$ npm i remarkable-defaults --save
 ```
 
 ## Usage
 
 ```js
-var remarkableDefaults = require('remarkable-defaults');
+var defaults = require('remarkable-defaults');
 ```
 
 ## API
-<!-- add a path or glob pattern for files with code comments to use for docs  -->
-{%= apidocs("index.js") %}
 
-## Related projects
-<!-- add an array of related projects, then un-escape the helper -->
-{%= related([]) %}  
+### [.defaults](index.js#L47)
 
-## Running tests
-Install dev dependencies.
+Get smart defaults for [remarkable][] allowing overriding with your own options
 
-```bash
-npm i -d && npm test
+* `returns` **{Object}**: options object usable in [remarkable][]
+
+**Example**
+
+```js
+var md = new Remarkable(defaults({langPrefix: 'language-'}));
 ```
 
+## Related projects
+
+[remarkable](https://www.npmjs.com/package/remarkable): Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in… [more](https://www.npmjs.com/package/remarkable) | [homepage](https://github.com/jonschlinkert/remarkable)
+
+## Running tests
+
+Install dev dependencies:
+
+```sh
+$ npm i -d && npm test
+```
 
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/remarkable-defaults/issues)
 
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/remarkable-defaults/issues/new).
 
 ## Author
 
 **Brian Woodward**
- 
+
 + [github/doowb](https://github.com/doowb)
-+ [twitter/doowb](http://twitter.com/doowb) 
++ [twitter/doowb](http://twitter.com/doowb)
 
 ## License
+
 Copyright © 2015 Brian Woodward
-Released under the MIT license
+Released under the MIT license.
 
 ***
 
