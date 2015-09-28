@@ -2,6 +2,8 @@
 
 > Smart default options for the remarkable markdown parser.
 
+Defaults originally pulled from [helper-markdown](https://github.com/helpers/helper-markdown/) and [helper-md](https://github.com/helpers/helper-md/)
+
 Install with [npm](https://www.npmjs.com/)
 
 ```sh
@@ -18,9 +20,9 @@ var defaults = require('remarkable-defaults');
 
 ### [.defaults](index.js#L47)
 
-Get smart defaults for [remarkable][] allowing overriding with your own options
+Get smart defaults for [remarkable](https://github.com/jonschlinkert/remarkable/) allowing overriding with your own options.
 
-* `returns` **{Object}**: options object usable in [remarkable][]
+* `returns` **{Object}**: options object usable in [remarkable](https://github.com/jonschlinkert/remarkable/)
 
 **Example**
 

@@ -34,7 +34,7 @@ var defaults = {
 
 /**
  * Get smart defaults for [remarkable][] allowing overriding
- * with your own options
+ * with your own options.
  *
  * ```js
  * var md = new Remarkable(defaults({langPrefix: 'language-'}));
