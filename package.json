@@ -21,5 +21,9 @@
   },
   "devDependencies": {
     "mocha": "*"
+  },
+  "dependencies": {
+    "extend-shallow": "^2.0.1",
+    "highlight.js": "^8.8.0"
   }
 }
